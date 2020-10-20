@@ -1,0 +1,23 @@
+C:\>cd temp
+
+C:\temp>cd DFU
+
+C:\temp\DFU>dfu-programmer.exe atmega16u2 erase --force
+Erasing flash...  Success
+Checking memory from 0x0 to 0x2FFF...  Empty.
+
+C:\temp\DFU>dfu-programmer.exe atmega16u2 flash moco.hex
+Error reading line 362.
+
+C:\temp\DFU>dfu-programmer.exe atmega16u2 flash moco.hex
+Checking memory from 0x0 to 0x167F...  Empty.
+0%                            100%  Programming 0x1680 bytes...
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]  Success
+0%                            100%  Reading 0x3000 bytes...
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]  Success
+Validating...  Success
+0x1680 bytes written into 0x3000 bytes memory (46.88%).
+
+C:\temp\DFU>dfu-programmer.exe atmega16u2 reset
+
+C:\temp\DFU>
