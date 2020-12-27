@@ -24,3 +24,8 @@ default SETUP:
    state BLINK  YY: 9<br>
    state BLINK YYY: 10<br>
    state     ON R:  127<br>
+   
+BOOTLOADER based on https://github.com/kuwatay/mocolufa (2 firmwares included).
+
+To enable Arduino-Serial (for programming), use jumper wire to PIN4 (MOSI PB2) and PIN6 (GND) on ICSP connector.
+Reset is required to switch between firmware modes.
