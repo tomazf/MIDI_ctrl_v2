@@ -23,4 +23,4 @@ default SETUP:
    state BLINK   Y: 8<br>
    state BLINK  YY: 9<br>
    state BLINK YYY: 10<br>
- 
+   state     ON R:  127<br>
