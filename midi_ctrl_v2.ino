@@ -1,9 +1,11 @@
+
 /*****************
    MIDI box - input on specific channel and send note button on press
-   @Ferbi v0.2
+   @Ferbi v0.2a
       - added keypad mapping
       - added LED color slots
       - added blinking feature
+      - added default button color
 */
 
 // All related to library "SkaarhojBI8":
@@ -77,6 +79,7 @@ uint8_t LEDstateMap[8] = {0, 0, 0, 0, 0, 0, 0, 0};      // LED state - 8x LED - 
 // state BLINK   Y: 8
 // state BLINK  YY: 9
 // state BLINK YYY: 10
+// state      ON R: 127
 
 //en kanal, različne note za gumbe, velocity določi stanje LEDice
 //CH4, note 61, vel: 10 -> 61 = prvi gumb, 10=green
@@ -138,6 +141,7 @@ void parseLEDstateMAP() {
         case 3: board.setButtonColor(buttonMapS[i], 1); break;
         case 4: board.setButtonColor(buttonMapS[i], 4); break;
         case 5: board.setButtonColor(buttonMapS[i], 5); break;
+        case 127: board.setButtonColor(buttonMapS[i], 2); break;    // default red for 127 velocity
         default: break;
       }
     }
