@@ -1,3 +1,1 @@
-include libraries for compiling
-
-# based on Skaarhoj
+include libraries for compiling (based on Skaarhoj)
