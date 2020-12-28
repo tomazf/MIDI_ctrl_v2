@@ -141,7 +141,7 @@ void parseLEDstateMAP() {
         case 3: board.setButtonColor(buttonMapS[i], 1); break;
         case 4: board.setButtonColor(buttonMapS[i], 4); break;
         case 5: board.setButtonColor(buttonMapS[i], 5); break;
-        case 127: board.setButtonColor(buttonMapS[i], 2); break;    // default red for 127 velocity
+        case 127: board.setButtonColor(buttonMapS[i], 1); break;    // default yellow for 127 velocity
         default: break;
       }
     }
